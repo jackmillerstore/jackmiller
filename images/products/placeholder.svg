@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Imagen de producto</title>
+  <desc id="desc">Imagen provisional para un artículo de JackMiller.</desc>
+  <rect width="1200" height="900" fill="#e7dfd2"/>
+  <rect x="80" y="80" width="1040" height="740" rx="36" fill="#d3c4b0"/>
+  <circle cx="450" cy="380" r="92" fill="#b59c7d"/>
+  <path d="M240 690 465 495l150 135 120-105 225 165H240Z" fill="#9f8669"/>
+  <text x="600" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#5e4b38">JackMiller</text>
+</svg>
