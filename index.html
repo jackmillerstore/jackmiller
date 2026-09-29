@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JackMiller</title>
+  <meta name="description" content="Catálogo de artículos disponibles en JackMiller.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="JackMiller inicio">JackMiller</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#como-funciona">Cómo funciona</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">ARTÍCULOS DISPONIBLES</p>
+          <h1>Encuentra algo que valga la pena conservar.</h1>
+          <p class="hero-copy">
+            Una selección cambiante de muebles, artículos para el hogar, herramientas,
+            electrónica y más.
+          </p>
+          <a class="button primary" href="#catalogo">Ver catálogo</a>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <span>JackMiller</span>
+          <strong>Objetos con una segunda oportunidad.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CATÁLOGO</p>
+            <h2>Artículos disponibles</h2>
+          </div>
+          <p id="resultsCount" class="results-count"></p>
+        </div>
+
+        <div class="controls">
+          <label class="search-field">
+            <span class="sr-only">Buscar artículos</span>
+            <input id="searchInput" type="search" placeholder="Buscar por nombre..." autocomplete="off">
+          </label>
+
+          <label>
+            <span class="sr-only">Filtrar por categoría</span>
+            <select id="categoryFilter">
+              <option value="todos">Todas las categorías</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        <p id="emptyState" class="empty-state" hidden>No encontramos artículos con esos filtros.</p>
+      </div>
+    </section>
+
+    <section class="how-section" id="como-funciona">
+      <div class="container">
+        <p class="eyebrow">CÓMO FUNCIONA</p>
+        <h2>Simple y directo</h2>
+        <div class="steps-grid">
+          <article>
+            <span>01</span>
+            <h3>Explora</h3>
+            <p>Revisa los artículos disponibles y abre los detalles de los que te interesen.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Pregunta</h3>
+            <p>Usa el botón “Me interesa” para contactar al vendedor sobre un artículo específico.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Coordina</h3>
+            <p>Confirma disponibilidad y coordina directamente los detalles de la compra.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <strong>JackMiller</strong>
+      <p>Catálogo de artículos disponibles.</p>
+    </div>
+  </footer>
+
+  <dialog id="productModal" class="product-modal">
+    <button id="modalClose" class="modal-close" type="button" aria-label="Cerrar">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
